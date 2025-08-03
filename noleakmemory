@@ -1,0 +1,14 @@
+#include <iostream>
+#include <memory>
+
+using namespace std;
+
+void no_leak() {
+    auto money = make_unique<int[]>(1000); 
+}
+
+int main() {
+    no_leak();  
+    cout << "память вернулась" << endl; 
+    return 0;
+}
