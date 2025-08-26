@@ -3,5 +3,5 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, C++!" << endl; // выводим текст и переводим строку
+    cout << "Hello, C++!"s << endl; // выводим текст и переводим строку
 }
