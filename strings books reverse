@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // считайте три названия книг целиком и выведите их в обратном порядке
+    string title_1, title_2, title_3;
+    getline (cin, title_1);
+    getline (cin, title_2);
+    getline (cin, title_3);
+    cout << title_3 << endl << title_2 << endl << title_1 << endl;
+}
