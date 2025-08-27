@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Считайте целое число (код с ошейника) из стандартного ввода
+    int code;
+    cin >> code;
+    // Если это код 11235813, выведите Fibo is found (Фибо найден)
+    if (code == 11235813) {
+        cout << "Fibo is found"s << endl;
+    // Иначе выведите This is not Fibo (Это не Фибо)
+    } else {
+        cout << "This is not Fibo"s << endl;
+    }
+}
