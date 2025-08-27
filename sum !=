@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Считайте три целых числа: X и Y и их сумму
+    int x, y, z;
+    cin >> x >> y >> z;
+    int sum = x + y;
+    // Если сумма указана неверно, выведите сообщение: "Error. The sum of X and Y is Z"
+    if (sum != z) {
+        cout << "Error. The sum of "s << x << " and "s << y << " is "s << sum << endl;
+    }
+    // Вместо символов X, Y и Z выведите числа X и Y, а также правильное значение суммы
+    else {
+        return 0;
+    }
+
+}
