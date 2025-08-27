@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // считайте пять слов и выведите их первые символы слитно
+    string a, b, c, d, e;
+    cin >> a >> b >> c >> d >> e;
+    char ch  = a [0];
+    char ch1 = b [0];
+    char ch2 = c [0];
+    char ch3 = d [0];
+    char ch4 = e [0];
+    cout << ch << ch1 << ch2 << ch3 << ch4 << endl;
+}
