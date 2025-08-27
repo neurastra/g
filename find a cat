@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Считайте цвета трёх домов и цвет дома, где видели Пушистика
+    string color1, color2, color3, color_cat;
+    cin >> color1 >> color2 >> color3 >> color_cat;
+    // Выведите Enter the house X, если дом нужного цвета имеет номер X
+    if (color_cat == color1) {
+        cout << "Enter the house "s << 1 << endl;
+    } else if (color_cat == color2) {
+        cout << "Enter the house "s << 2 << endl;
+    } else if (color_cat == color3) {
+        cout << "Enter the house "s << 3 << endl; 
+    }
+    // Выведите Seek somewhere else, если дома нужного цвета нет
+    else {
+        cout << "Seek somewhere else"s << endl;
+    }
+}
