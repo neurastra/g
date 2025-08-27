@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Считайте два размера и определите,
+    double a, b;
+    cin >> a >> b;
+    // сколько надо отрезать от большего большей части апельсина.
+    if (a > b) {
+        cout << "Cut off "s << a - b << " from the first part"s << endl;
+    } if (a < b) {
+        cout << "Cut off "s << b - a << " from the second part"s << endl;
+    }
+    // Либо сообщите, что размеры частей равны.
+        if (a == b) {
+        cout << "The orange is divided into two equal parts"s << endl;
+    }
+}
