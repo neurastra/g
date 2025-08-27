@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // Считайте информацию о трёх домах, которые видит перед собой Марта,
+    string color_1, color_2, color_3, color_4;
+    int floor_1, floor_2, floor_3, floor_4;
+    // а также показания очевидца.
+    if (!(cin >> color_1 >> floor_1 >> color_2 >> floor_2 >> color_3 >> floor_3 >> color_4 >> floor_4)) return 0;
+
+    bool anyColor = (color_4 == "?");
+    bool anyFloor = (floor_4 == -1);
+    // Выведите номера тех домов (1, 2, 3) которые нужно посетить,
+    if (anyColor && anyFloor) {
+        cout << 1 << '\n' << 2 << '\n' << 3 << '\n';
+        return 0;
+    }
+    // по одному номеру в каждой строке
+    if ((anyFloor || floor_1 == floor_4) && (anyColor || color_1 == color_4)) cout << 1 << '\n';
+    if ((anyFloor || floor_2 == floor_4) && (anyColor || color_2 == color_4)) cout << 2 << '\n';
+    if ((anyFloor || floor_3 == floor_4) && (anyColor || color_3 == color_4)) cout << 3 << '\n';
+
+    return 0;
+}
