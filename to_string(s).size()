@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // Считайте два целых числа из cin
+    int a, b;
+    cin >> a >> b;
+    // Выведите произведение их суммы на количество чисел в записи суммы
+    int s = a + b;
+    // string t = "Hello"s + to_string(z); // В t будет значение "Hello42" 
+    cout << s * to_string(s).size() << endl;
+
+}
