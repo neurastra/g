@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // 1. Считайте имя и фамилию
+    string first_name, last_name;
+    cin >> first_name >> last_name;
+    // 2. Выведите полное имя в формате: фамилия, имя
+    cout << last_name << ", " << first_name << endl;
+}
