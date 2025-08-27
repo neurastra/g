@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // <число документов> documents found
+    int a;
+    cin >> a;
+    string search = to_string(a) + " documents found"s;
+    cout << search << endl;
+    return 0;
+}
