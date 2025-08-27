@@ -1,0 +1,9 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string greetings = "Hello, friend!"s;
+    cout << greetings << endl;
+    return 0;
+}
