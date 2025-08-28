@@ -1,0 +1,38 @@
+/* Цикл while - "пока не вмажут"
+Выполняет код, пока условие истинно.
+while (условие) {
+  // тело цикла
+} */
+
+/* Ломимся в бар */
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int trying;
+    cin >> trying;
+    while (trying < 5) {
+        cout << "Пытаюсь вломиться в клуб..."s << endl;
+    } 
+}
+
+/* Здесь специально ошибка потому что while не может быть исполнен, возможен лишь кутеж или выкинут  */
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int trying;
+    cin >> trying;
+    while (trying < 0) {
+        cout << "Пытаюсь вломиться в клуб..."s << endl;
+    } if (false) {
+    	cout << "Кутеж..."s << endl;
+    } if (true) {
+    	cout << "Выкинули твари..."s << endl;
+    }
+}
+
+
