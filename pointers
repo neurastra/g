@@ -1,0 +1,9 @@
+int whiskyBottles = 10;
+int* pointerToWhisky = &whiskyBottles; // & - адрес бутылок виски
+
+cout << "Значение: " << *pointerToWhisky; // * - "содержимое бочки"
+cout << "Адрес: " << pointerToWhisky // сам адрес
+
+// Динамическая память:
+int* dynamicWhisky = new int(50); // новая бочка в куче
+delete dynamicWhisky; // не забыть освободить
