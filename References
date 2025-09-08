@@ -1,0 +1,10 @@
+int original = 100;
+int& reference = original; // прозвище того же горца
+
+reference = 200; // меняем оригинал через прозвище
+cout << original; // 200
+
+// ссылки в функциях:
+void pourWhisky(int& glass) {
+  glass += 50; // меняем оригинальное значение
+}
