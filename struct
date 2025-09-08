@@ -1,0 +1,19 @@
+struct Highlander{
+  string name; // имя
+  int age; // возраст
+  string clan; // клан
+  bool hasSword; // наличие меча
+  double whiskyCapacity; // вместимость для виски
+};
+
+// Создание экземпляра:
+Highlander warrior1;
+warrior1.name = "Connor MacLeod";
+warrior1.age = 450;
+warrior1.hasSword = true;
+
+// Инициализация:
+Highlander warrior2 = {"Duncan", 400, "MacLeod", true, 2.5);
+
+// Массив структур:
+Highlander army[10]; // отряд из 10 горцев
