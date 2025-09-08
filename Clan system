@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct ClanMember {
+  string name;
+  int age;
+  string role;
+  int battlesWon;
+};
+
+int main() {
+// массив членов класса
+  ClanMember macLeodClan[3] = {
+  {"Connor", 450, "Leader", 100},
+  {"Heather", 30, "Healer", 5},
+  {"Angus", 35, "Warrior", 25}
+};
+
+// указатель на члена клана
+  ClanMember* leaderPointer = &macLeodClan[0];
+
+// ссылка на воина
+  ClanMember& warrorRef = macLeodClan[2];
+
+// вывод информации
+  cout << "Лидер: " << leaderPointer->name << endl;
+  cout << "Победы воина: " << warrorRef.battlesWon << endl;
+
+// изменение через ссылку
+  warriorRef.battlesWon++;
+  cout << "Новые победы: " << macLeodClan[2].battlesWon << endl;
+
+  return 0;
+}
